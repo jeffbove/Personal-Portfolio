@@ -1,15 +1,15 @@
 import React from 'react'
-import GitHub from './github.png'
-import JavaScript from './javascript.png'
-import RReact from './react.png'
-import Html from './html.png'
-import Css from './css.png'
-import Node from './node.png'
-import Tailwind from './tailwind.png'
+import GitHub from './img/github.png'
+import JavaScript from './img/javascript.png'
+import RReact from './img/react.png'
+import Html from './img/html.png'
+import Css from './img/css.png'
+import Node from './img/node.png'
+import Tailwind from './img/tailwind.png'
 
 const Tools = () => {
   return (
-    <div name='Tools' className=' bg-[#00132B]'>
+    <div name='Tools' className=' h-[100vh] bg-[#00132B]'>
         {/* container */}
       <div className=' justify-center items-center text-gray-300 max-w-[1000px] mx-auto p-4 mt-20 flex flex-col m-auto w-full h-full'>  
         <div>

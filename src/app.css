@@ -6,17 +6,30 @@
     border-radius: .25rem;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
     background-color: #00132B;
-    transform-style: preserve-3d;
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 250px;
-    width: 300px;
+    width: 330px;
+    
     margin: 0px;
     border: 2px solid white;
     transition: 150ms;
     cursor: pointer;
     transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  }
+  
+  
+  @media (max-width:720px){
+    .card{
+      width: 197px;
+    }
+  }
+  @media (max-width:430px){
+    .card{
+      width: 40vw;
+    }
   }
 
   .btn {
@@ -63,4 +76,6 @@
   .card .back {
     transform: rotateY(180deg);
   }
+
+  
   

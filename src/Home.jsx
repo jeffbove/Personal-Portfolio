@@ -1,4 +1,5 @@
 import React from 'react'
+import MyPicture from './img/Me.JPG'
 import { Link } from 'react-scroll'
 
 
@@ -15,13 +16,28 @@ function Home() {
     <div className=' w-full h-screen bg-[#00132B]'>
 
       {/* container */}
-      <div name='Home' className=' text-[#8892b0] font-bold max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full bg-[#00132B]'>
-        <p>Hi, my name is</p>
-        <h1 className='text-4xl sm:text-7xl text-[#ccd6f6]'>Jeffrey Bove ,</h1>
-        <h2 className='text-4xl sm:text-6xl text-[#ccd6f6]'> and i am software engineer</h2>
-        <p className='py-4 max-w-5 pt-2 text-sm'   >Best in the World 👌<span className='text-[#ccd6f6]'> Simple , Classic , Professional ,
-           Awesome 🔥</span> You are absolutely right we don't need fancy and animated portfolio 🙏
-           I love what i do and will continue to code ❤️😊.</p>
+      <div name='Home' className=' text-[#8892b0] font-bold max-w-[1000px] md:h-[100vh] h-[124vh] mx-auto px-8 flex flex-col justify-center  bg-[#00132B]'>
+        
+         
+          
+        
+        <h2>Hi, my name is</h2>
+        <h1 className='text-4xl sm:text-7xl text-[#ccd6f6]'>Jeffrey Bove.</h1>
+        
+         
+       
+        <div className='py-4 max-w-5 pt-2'>
+        <img className=' float-left mx-3  rounded-2xl w-[130px] h-21' src={MyPicture}></img>
+          I am currently freelance Front-End Developer. Adept in all stages of web development, Primarily using the MERN stack ( MongoDB , Express , React.JS , Node.Js ) ,
+          with the ability to use my tools in a professional development environment.
+          <br/>
+          Ability to critically think and coordinate Best practices , Architecture & User experience to my team and clearly listen to client about all Specifics and minor details requested in product
+          & producing quality build.
+          <br/>
+          Experience with troubleshooting procedures and adept at finding the core of an issue relatively quickly.
+         <br/> Well knowledged in web design patterns, best file & code organization practices in a professional codebase.
+         
+        </div>
 
            
            <Link  activeClass="active" to="Projects" smooth={true} duration={500} >

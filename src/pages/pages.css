@@ -1,0 +1,33 @@
+.cointainer{
+    height: 70vh;
+    width:370px;
+    background-color:black ;
+    display: flex;
+    margin:auto;
+    align-content:center ;
+    margin-top: 12vh;
+    box-shadow: 5px 4px 6px black ;
+    border: 15px ridge  rgb(77, 161, 147)
+    
+}
+
+@media (max-width:900px){
+    .cointainer{
+        height: 70vh;
+    }
+    
+}
+@media (max-width:460px){
+    .cointainer{
+        height: 59vh;
+    }
+    
+}
+@media (max-width:380px){
+    .cointainer{
+        height: 60vh;
+    }
+    
+}
+
+

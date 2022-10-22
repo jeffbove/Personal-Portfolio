@@ -1,27 +1,41 @@
 import React, { useState} from 'react'
-import MovieImg from './Smaller321movies.png'
+import SNAKEimg from './img/SNAKE.png'
+import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import "./app.css"
-const Card = () => {
-    const [flip, setFlip] = useState(false);
+  const Card = () => {
+    // const [flip, setFlip] = useState(false);
 
   return (
+
     <div
-      className={`card ${flip ? 'flip' : ''}`}
-      onClick={() => setFlip(!flip)}
+      // className={`card ${flip ? 'flip' : ''}`}
+      // onClick={() => setFlip(!flip)}
+      
     >
+      <Link exact to='/P2'  className='card'>
       <div className="front">
-      <span className='title'>Movies321 (API)</span>
-        <img src={MovieImg}/></div>
+      <span className='title'>'Snake' Game</span><br/>
+      <span>*Desktop only*</span>
+        <img src={SNAKEimg}/></div>
         
-        <div className="back" >
+      {/* <div className="back" >
         <div>
-        <button className='btn'>Open</button>
-        <button className='btn'>GitHub Link</button>
-        <p>Movie API created using react  OMDB</p>
+          <a href='https://flourishing-speculoos-98e092.netlify.app/'>
+          <button className='btn' >
+          Open</button>
+          </a>
+       
+          <a href='https://github.com/jeffbove/PONG'>
+          <button className='btn' >
+          GitHub link</button>
+          </a>
+        <p>A simple single-player Pong AI game</p>
         </div>
-      </div>
+      </div> */}
+      </Link>
     </div>
-    )
-  }
+    
+  )
+}
 
 export default Card
